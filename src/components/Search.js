@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { TextField, Button, Card } from '@material-ui/core';
 
 const Search = (props) => {
   const [searchValue, setSearchValue] = useState("");
@@ -20,12 +20,17 @@ const Search = (props) => {
 
   return (
       <form className="search">
-        <input
+        <TextField 
+          id="standard-basic" 
           value={searchValue}
           onChange={handleSearchInputChanges}
           type="text"
+          placeholder="Title here..."
         />
-        <input onClick={callSearchFunction} type="submit" value="SEARCH" />
+        {/*<input onClick={callSearchFunction} type="submit" value="SEARCH" />*/}
+        <Button variant="contained" color="primary" onClick={callSearchFunction} type="submit" value="SEARCH">
+          Search
+        </Button>
       </form>
     );
 }
