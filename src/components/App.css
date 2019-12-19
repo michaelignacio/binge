@@ -100,7 +100,7 @@ input[type="submit"]:hover {
   min-width: 170px;
 }
 
-@media screen and (min-width: 694px) and (max-width: 915px) {
+/* @media screen and (min-width: 694px) and (max-width: 915px) {
   .movie {
     max-width: 33%;
   }
@@ -110,7 +110,7 @@ input[type="submit"]:hover {
   .movie {
     max-width: 50%;
   }
-}
+} */
 
 
 @media screen and (max-width: 651px) {
@@ -118,4 +118,15 @@ input[type="submit"]:hover {
     max-width: 100%;
     margin: auto;
   }
+}
+
+.MuiCardMedia-root {
+    height: 270px;
+}
+
+.MuiCardHeader-title {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

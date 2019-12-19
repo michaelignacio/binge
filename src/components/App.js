@@ -88,7 +88,7 @@ const App = () => {
         ) : errorMessage ? (
           <div className="errorMessage">{errorMessage}</div>
         ) : (
-          movies.map((movie, index) => (
+          movies.slice(0,8).map((movie, index) => (
             <Movie key={`${index}-${movie.Title}`} movie={movie} />
           ))
         )}
